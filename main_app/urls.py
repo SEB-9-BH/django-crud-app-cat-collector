@@ -1,11 +1,10 @@
 # main_app/urls.py
-
 from django.urls import path
 from . import views # Import views to connect routes to view functions
 
 urlpatterns = [
     # Routes will be added here
-    path('', views.home, name='home'),
+    path('', views.Home.as_view(), name='home'),
     path('about/', views.about, name='about'),
     path('cats/', views.cat_index, name='cat_index'),
     path('cats/<int:cat_id>/', views.cat_detail, name='cat_detail'),
@@ -19,4 +18,7 @@ urlpatterns = [
         #Existing urls above
     path('toys/<int:pk>/update/', views.ToyUpdate.as_view(), name='toy_update'),
     path('toys/<int:pk>/delete/', views.ToyDelete.as_view(), name='toy_delete'),
+    path('cats/<int:cat_id>/associate-toy/<int:toy_id>/', views.associate_toy, name='associate_toy'),
+    path('cats/<int:cat_id>/remove-toy/<int:toy_id>/', views.remove_toy, name='remove_toy'),
+    path('accounts/signup/', views.signup, name='signup')
 ]
