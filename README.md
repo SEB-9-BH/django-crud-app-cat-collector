@@ -2,7 +2,7 @@
 
 ## About
 
-This repo contains the solution code for the FastAPI CRUD App.
+This repo contains the solution code for the Django CRUD App.
 
 ## Getting Started
 
