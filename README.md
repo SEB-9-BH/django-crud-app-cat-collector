@@ -27,7 +27,7 @@ This repo contains the solution code for the Django CRUD App.
 4. Set up your PostgreSQL database:
 
    - Ensure PostgreSQL is installed and running on your machine.
-   - Create a database named `teas_db` if it does not already exist:
+   - Create a database named `catcollector` if it does not already exist:
 
 ```bash
 createdb catcollector
