@@ -38,3 +38,21 @@ createdb catcollector
 ```bash
 code .
 ```
+
+6. Make migrations:
+
+```bash
+python manage.py makemigrations
+```
+
+7. Migrate your changes:
+
+```bash
+python manage.py migrate
+```
+
+8. Run the server:
+
+```bash
+python manage.py runserver
+```
